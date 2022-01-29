@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  nginx:
+    image: nginx
+    build:
+      context: .
+      dockerfile: nginx\Dockerfile
+    volumes:
+      - ./nginx/:c:\nginx\nginx-1.20.2\conf
+      - ./nginx/logs:c:\nginx\nginx-1.20.2\logs
+    ports:
+      - "80:80"
+    networks:
+      - test-net
+    depends_on:
+      - signalrcpplibservice
+
+  signalrcpplibservice:
+    image: ${DOCKER_REGISTRY-}signalrcpplibservice
+    build:
+      context: .
+      dockerfile: SignalRCppLibService\Dockerfile
+    networks:
+      - test-net
+
+networks:
+  test-net:
+
