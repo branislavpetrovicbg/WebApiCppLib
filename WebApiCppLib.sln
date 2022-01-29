@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRCppLibService", "Sig
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{8D23CDAC-8A42-447B-AF4E-104093AB03E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleClient", "ConsoleClient\ConsoleClient.csproj", "{B5558B6A-E64E-4269-8D65-A7DAB47E5595}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,14 @@ Global
 		{8D23CDAC-8A42-447B-AF4E-104093AB03E9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8D23CDAC-8A42-447B-AF4E-104093AB03E9}.Release|x64.ActiveCfg = Release|Any CPU
 		{8D23CDAC-8A42-447B-AF4E-104093AB03E9}.Release|x64.Build.0 = Release|Any CPU
+		{B5558B6A-E64E-4269-8D65-A7DAB47E5595}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5558B6A-E64E-4269-8D65-A7DAB47E5595}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5558B6A-E64E-4269-8D65-A7DAB47E5595}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B5558B6A-E64E-4269-8D65-A7DAB47E5595}.Debug|x64.Build.0 = Debug|Any CPU
+		{B5558B6A-E64E-4269-8D65-A7DAB47E5595}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5558B6A-E64E-4269-8D65-A7DAB47E5595}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5558B6A-E64E-4269-8D65-A7DAB47E5595}.Release|x64.ActiveCfg = Release|Any CPU
+		{B5558B6A-E64E-4269-8D65-A7DAB47E5595}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
