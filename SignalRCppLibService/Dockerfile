@@ -4,7 +4,8 @@
 #For more information, please see https://aka.ms/containercompat
 
 FROM mcr.microsoft.com/dotnet/aspnet:6.0.1-nanoserver-20H2 AS base
-COPY ./Microsoft.VC143.CRT/ ./Windows/System32/ # Alternatively I can try to download and install Visual Studio with vc redist to servercore and then copy needed dlls to nanoserver
+#Alternatively I can try to download and install Visual Studio with vc redist to servercore and then copy needed dlls to nanoserver
+COPY ./Microsoft.VC143.CRT/ ./Windows/System32/
 WORKDIR /app
 EXPOSE 80
 
